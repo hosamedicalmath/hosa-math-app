@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSA Medical Math Mock Exam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HOSA Medical Math Pro</h1>
+        <p>AI-Generated 60-Question Multi-Step Mock Exams</p>
+        <button id="generateBtn">Generate Full 60-Q Exam</button>
+    </header>
+
+    <div id="loadingScreen" class="hidden">
+        <h2>Generating Exam...</h2>
+        <p id="loadingStatus">Initializing AI Models...</p>
+        <div class="progress-bar"><div id="progressFill"></div></div>
+        <p><small>This may take 1-2 minutes to write 60 complex math problems.</small></p>
+    </div>
+
+    <main id="examContainer" class="hidden">
+        <div id="questionsList"></div>
+        <button id="checkAllBtn" class="primary-btn">Check All Answers</button>
+        <div id="examResults"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
